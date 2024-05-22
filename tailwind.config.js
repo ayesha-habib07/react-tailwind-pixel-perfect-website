@@ -1,0 +1,37 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    colors: {
+      black: "#000000",
+      white: "#FFFFFF",
+      "off-white": "#F5F7FA",
+      "off-gray": "#232F43",
+      green: "#0C6E4F",
+      "off-lite": "#B2C1D9",
+      lite: "#D9D9D9",
+      "lite-gray": "#828282",
+      "deep-green": "#03654C",
+      "green-light": "#00FC51",
+      "deep-brownish": "#BF8943",
+      'wheat-lite': '#E7E7E7',
+      'sky-off': '#21293B',
+      
+      // 'wheat-lite': '#E7E7E7',
+
+      // 'wheat-lite': '#E7E7E7',
+      // 'wheat-lite': '#E7E7E7',
+      // 'wheat-lite': '#E7E7E7',
+      // 'wheat-lite': '#E7E7E7',
+      
+    },
+    fontFamily: {
+      messiri: ["El Messiri"],
+      poppin: ["Poppins"],
+      Montserrat: ["Montserrat"],
+      PlusJakartaSans: ["Plus Jakarta Sans"],
+    },
+    extend: {},
+  },
+  plugins: [],
+};

@@ -6,9 +6,9 @@ import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PostCard from "../../component/PostCard";
 import StoryCard from "../../component/StoryCard";
+import Sidebar from "../../component/Sidebar";
 const Homepage = () => {
   return (
-
     // <>
     //   <div className="px-[34px]">
 
@@ -16,7 +16,6 @@ const Homepage = () => {
     //       <div></div>
     //       <Search SearchClass={`mx-auto`} Searchcions={Searchcions} />
     //     </div>
-
 
     //     <div>
     //       <div className="bg-deep-green flex">
@@ -35,11 +34,10 @@ const Homepage = () => {
     //       </div>
     //     </div>
 
-
-
     //   </div>
     // </>
     <div>
+      <Sidebar />
       <div className="flex pt-8 justify-between flex-col">
         <div className="flex justify-between mb-6">
           <div></div>
@@ -99,8 +97,6 @@ const Homepage = () => {
             View More
           </span>
         </div>
-
-
       </div>
       <div className="flex gap-5">
         <PostCard />
@@ -117,12 +113,11 @@ const Homepage = () => {
           </span>
         </div>
         <div className="flex gap-5">
-         <StoryCard />
-         <StoryCard />
-         <StoryCard />
+          <StoryCard />
+          <StoryCard />
+          <StoryCard />
         </div>
       </div>
-
     </div>
   );
 };

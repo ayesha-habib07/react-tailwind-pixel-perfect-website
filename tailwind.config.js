@@ -14,16 +14,16 @@ module.exports = {
       "deep-green": "#03654C",
       "green-light": "#00FC51",
       "deep-brownish": "#BF8943",
-      'wheat-lite': '#E7E7E7',
-      'sky-off': '#21293B',
-      
+      "wheat-lite": "#E7E7E7",
+      "sky-off": "#21293B",
+      "dark-green": "#1B4D3E",
+
       // 'wheat-lite': '#E7E7E7',
 
       // 'wheat-lite': '#E7E7E7',
       // 'wheat-lite': '#E7E7E7',
       // 'wheat-lite': '#E7E7E7',
       // 'wheat-lite': '#E7E7E7',
-      
     },
     fontFamily: {
       messiri: ["El Messiri"],
@@ -33,5 +33,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

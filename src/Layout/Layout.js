@@ -1,10 +1,10 @@
-import React from 'react';  
-import Sidebar from '../component/Sidebar';
+import React from "react";
+import Sidebar from "../component/Sidebar";
 
 const Layout = ({ children }) => {
   return (
     <div className="flex gap-8">
-      {/* <Sidebar /> */}
+      <Sidebar />
       <div className="flex flex-col w-full pr-[30px] container">
         <main className="flex-grow p-4">{children}</main>
       </div>

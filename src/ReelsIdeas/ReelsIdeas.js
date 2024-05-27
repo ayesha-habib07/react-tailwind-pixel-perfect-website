@@ -23,7 +23,7 @@ const ReelsIdeas = () => {
             <Openccallender />
           </div>
 
-          <div className="flex justify-between items-center pr-8 my-8 ">
+          <div className="flex justify-between items-center pr-8 my-8 w-full">
             <p className="font-messiri font-normal text-2xl leading-9 text-sky-off">
               Reels Ideas
             </p>
@@ -31,10 +31,10 @@ const ReelsIdeas = () => {
               <p className="block font-semibold text-base leading-5 text-green cursor-pointer  border-b-4 border-b-green pb-4 px-8">
                 Lead generators
               </p>
-              <p className="block font-semibold text-base leading-5 text-lite-gray .active:text-green cursor-pointer  border-b-2 border-b-lite-gray pb-4 px-8">
+              <p className="block font-semibold text-base leading-5 text-lite-gray active:text-green cursor-pointer  border-b-2 border-b-lite-gray pb-4 px-8">
                 Engagement
               </p>
-              <p className="block font-semibold text-base leading-5 text-lite-gray .active:text-green cursor-pointer  border-b-2 border-b-lite-gray pb-4 px-8">
+              <p className="block font-semibold text-base leading-5 text-lite-gray active:text-green cursor-pointer  border-b-2 border-b-lite-gray pb-4 px-8">
                 Local
               </p>
               <p className="block font-semibold text-base leading-5 text-lite-gray active:text-green cursor-pointer  border-b-2 border-b-lite-gray pb-4 px-8">
@@ -43,7 +43,7 @@ const ReelsIdeas = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-5 flex-wrap">
+        <div className="flex gap-5 flex-wrap w-full  justify-between">
           <StoryCard />
           <StoryCard />
           <StoryCard />

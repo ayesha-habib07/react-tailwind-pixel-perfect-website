@@ -4,7 +4,7 @@ import Checkbox from "./Checkbox";
 const StoryCard = () => {
   return (
     <>
-      <div className='l w-[30%] h-[232px]   p-5 className="flex justify-center flex-col items-center mb-4 bg-white '>
+      <div className='l w-[32%] h-[232px]   p-5 className="flex justify-center flex-col items-center mb-4 bg-white '>
         <div className="flex justify-between mb-4">
           <button className="w-[80px] h-[25px] flex items-center justify-center text-white bg-deep-brownish py-[5px] px-[8px] rounded-full">
             Insight

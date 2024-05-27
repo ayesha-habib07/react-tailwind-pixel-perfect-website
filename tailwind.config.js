@@ -31,7 +31,13 @@ module.exports = {
       Montserrat: ["Montserrat"],
       PlusJakartaSans: ["Plus Jakarta Sans"],
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        "custom-light": "0 2px 4px rgba(0, 0, 0, 0.1)",
+        "custom-medium": "0 2px 4px rgba(0, 0, 0, 0.2)",
+        "custom-dark": "0 2px 10px rgba(0, 0, 0, 0.8)",
+      },
+    },
   },
   plugins: [require("tailwind-scrollbar")],
 };

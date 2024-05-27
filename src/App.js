@@ -6,6 +6,7 @@ import Register from "./Register/Register";
 import Homepage from "./asset/HomePage/Homepage";
 import Layout from "./Layout/Layout"; // Import the Layout component
 import PostCard from "./component/PostCard";
+import ReelsIdeas from "./ReelsIdeas/ReelsIdeas";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/Reels" element={<ReelsIdeas />} />
       </Routes>
       {/* <Layout>
       </Layout> */}

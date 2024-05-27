@@ -36,7 +36,7 @@ const Register = () => {
   };
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
-    console.log(isChecked,"box");
+    console.log(isChecked, "box");
   };
 
   return (
@@ -87,10 +87,13 @@ const Register = () => {
           <div className="mt-8 flex justify-between">
             <Checkbox
               label="Remember me"
+              defaultStyles={true}
               checked={isChecked}
               onChange={handleCheckboxChange}
             />
-            <p className="font-medium text-xs leading-6 text-black font-Montserrat">Forgot password?</p>
+            <p className="font-medium text-xs leading-6 text-black font-Montserrat">
+              Forgot password?
+            </p>
           </div>
         </div>
         <div className="relative pt-8">

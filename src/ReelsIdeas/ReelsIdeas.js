@@ -51,6 +51,7 @@ const ReelsIdeas = () => {
             return (
               <StoryCard
                 key={item.id}
+                id={item.id}
                 status={item.status}
                 title={item.title}
                 para={item.para}

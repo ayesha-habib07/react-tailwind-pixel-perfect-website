@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import StoryCard from "../component/StoryCard";
-import Search from "../component/Search";
-import Sidebar from "../component/Sidebar";
-import data from "../data/Reelsdata.json";
+import StoryCard from "../../component/StoryCard";
+import Search from "../../component/Search";
+import Sidebar from "../../component/Sidebar";
+import data from "../../data/Reelsdata.json";
 import { useParams } from "react-router";
 const ReelSingleIdea = () => {
   const { id } = useParams();

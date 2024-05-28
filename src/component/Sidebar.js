@@ -408,7 +408,7 @@ text-[20px] leading-[22.68px]"
             </span>
             <span className="select-none flex items-center py-2 cursor-pointer my-[.4rem] rounded-[.95rem] ">
               <NavLink
-                to="/SocialMedia"
+                to="/reels"
                 className="flex items-center flex-grow gap-2  text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark py-2 font-medium px-4"
                 style={({ isActive }) => {
                   return isActive
@@ -449,7 +449,7 @@ text-[20px] leading-[22.68px]"
                       />
                     </svg>
                     <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Reels Ideas{" "}
+                      Reels Ideas
                     </span>
                   </>
                 )}
@@ -457,7 +457,7 @@ text-[20px] leading-[22.68px]"
             </span>
             <span className="select-none flex items-center py-2 cursor-pointer my-[.4rem] rounded-[.95rem] ">
               <NavLink
-                to="/SocialMedia"
+                to="/Storyideas"
                 className="flex items-center flex-grow gap-2  text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark py-2 font-medium px-4"
                 style={({ isActive }) => {
                   return isActive
@@ -557,7 +557,7 @@ text-[20px] leading-[22.68px]"
                     </svg>
 
                     <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Story Template{" "}
+                      Story Template
                     </span>
                   </>
                 )}

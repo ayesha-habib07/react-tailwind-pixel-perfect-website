@@ -8,6 +8,9 @@ import data from "../data/Reelsdata.json";
 import { useNavigate } from "react-router";
 const ReelsIdeas = () => {
   const navigate = useNavigate();
+  const handleItemClick = (id) => {
+    navigate(`/reels/${id}`);
+  };
   return (
     <div className="flex gap-x-[80px]  bg-[#F9FAF5]      ">
       <Sidebar />
@@ -55,6 +58,7 @@ const ReelsIdeas = () => {
                 status={item.status}
                 title={item.title}
                 para={item.para}
+                handleItemClick={handleItemClick}
               />
             );
           })}

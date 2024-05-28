@@ -1,12 +1,13 @@
 import React from "react";
 import Checkbox from "./Checkbox";
-import { useNavigate } from "react-router";
-const StoryCard = ({ id, status, title, para, handle, CustomclassName }) => {
-  const navigator = useNavigate();
-
-  const handleItemClick = (id) => {
-    navigator(`/reels/${id}`);
-  };
+const StoryCard = ({
+  id,
+  status,
+  title,
+  para,
+  handleItemClick,
+  CustomclassName,
+}) => {
   return (
     <>
       <div

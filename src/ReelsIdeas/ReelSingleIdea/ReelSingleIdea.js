@@ -3,9 +3,10 @@ import StoryCard from "../../component/StoryCard";
 import Search from "../../component/Search";
 import Sidebar from "../../component/Sidebar";
 import data from "../../data/Reelsdata.json";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 const ReelSingleIdea = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [dataItem, setDataItem] = useState([]);
   const [wholedata, setWholeData] = useState(data);
   const [selectedDay, setSelectedDay] = useState("MONDAY");
@@ -19,7 +20,9 @@ const ReelSingleIdea = () => {
   const handlechangeDay = (day) => {
     setSelectedDay(day);
   };
-
+  const handleItemClick = (id) => {
+    navigate(`/reels/${id}`);
+  };
   return (
     <div className="flex gap-x-[80px]  bg-bg-grey      ">
       <Sidebar />
@@ -130,6 +133,7 @@ const ReelSingleIdea = () => {
                       status={item.status}
                       title={item.title}
                       para={item.para}
+                      handleItemClick={handleItemClick}
                     />
                   );
                 })}

@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Sidebar from "../component/Sidebar";
 import Search from "../component/Search";
 import StoryCard from "../component/StoryCard";
 import data from "../data/Storyidea.json";
+import { useNavigate } from "react-router";
 
 const Storyideas = () => {
   const [selectedDay, setSelectedDay] = useState("All");
-
+  const navigate = useNavigate();
   const handlechangeDay = (day) => {
     setSelectedDay(day);
+  };
+  const handleItemClick = (id) => {
+    navigate(`/Storyideas/${id}`);
   };
   return (
     <div className="flex gap-x-[80px]  bg-bg-grey      ">
@@ -96,6 +100,7 @@ const Storyideas = () => {
                   status={item.status}
                   title={item.title}
                   para={item.para}
+                  handleItemClick={handleItemClick}
                 />
               );
             })}

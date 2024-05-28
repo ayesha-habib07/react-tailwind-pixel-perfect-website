@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 
-const Checkbox = ({ defaultStyles = false, label, checked, onChange }) => {
+const Checkbox = ({
+  status,
+  defaultStyles = false,
+  label,
+  checked,
+  onChange,
+}) => {
+  const [checkedStatus, setcheckedStatus] = useState(status);
   return (
     <div
       className={`flex items-center space-x-2 cursor-pointer ${
@@ -12,9 +19,16 @@ const Checkbox = ({ defaultStyles = false, label, checked, onChange }) => {
         <input
           type="checkbox"
           id={label}
-          checked={checked}
-          onChange={onChange}
+          // checked={checked}
+          checked={checkedStatus}
           className="hidden-checkbox"
+          onChange={(e) => {
+            e.stopPropagation();
+            setcheckedStatus(!checkedStatus);
+          }}
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
         />
         <span className="check custom-checkbox"></span>
         {label}

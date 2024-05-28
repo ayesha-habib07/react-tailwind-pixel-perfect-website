@@ -1,10 +1,13 @@
 import React from "react";
-import Sidebar from "../component/Sidebar";
-import Search from "../component/Search";
-import Picwithtext from "../component/Picwithtext";
-import Openccallender from "../component/Openccallender";
 import StoryCard from "../component/StoryCard";
+import Picwithtext from "../component/Picwithtext";
+import Search from "../component/Search";
+import Sidebar from "../component/Sidebar";
+import Openccallender from "../component/Openccallender";
+import data from "../data/Reelsdata.json";
+import { useNavigate } from "react-router";
 const ReelsIdeas = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex gap-x-[80px]  bg-[#F9FAF5]      ">
       <Sidebar />
@@ -44,12 +47,16 @@ const ReelsIdeas = () => {
           </div>
         </div>
         <div className="flex gap-5 flex-wrap w-full  justify-between">
-          <StoryCard />
-          <StoryCard />
-          <StoryCard />
-          <StoryCard />
-          <StoryCard />
-          <StoryCard />
+          {data?.map((item) => {
+            return (
+              <StoryCard
+                key={item.id}
+                status={item.status}
+                title={item.title}
+                para={item.para}
+              />
+            );
+          })}
         </div>
       </div>
     </div>

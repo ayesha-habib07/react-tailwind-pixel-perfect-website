@@ -10,6 +10,7 @@ module.exports = {
       green: "#0C6E4F",
       "off-lite": "#B2C1D9",
       lite: "#D9D9D9",
+      "bg-grey": "#f9faf5",
       "lite-gray": "#828282",
       "deep-green": "#03654C",
       "green-light": "#00FC51",

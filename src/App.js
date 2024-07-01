@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
-import Homepage from "./asset/HomePage/Homepage";
-import Layout from "./Layout/Layout"; // Import the Layout component
+import Homepage from "./HomePage/Homepage";
+import Layout from "./Layout/Layout";
 import PostCard from "./component/PostCard";
 import ReelsIdeas from "./ReelsIdeas/ReelsIdeas";
 import Storyideas from "./Storyideas/Storyideas";
 import ReelSingleIdea from "./ReelsIdeas/ReelSingleIdea/ReelSingleIdea";
 import Storysingleideas from "./Storyideas/Storysingleideas/Storysingleideas";
-
+import Branding from "./pages/branding/Branding";
 function App() {
   return (
     <Router>
@@ -25,6 +25,7 @@ function App() {
         <Route path="/Storyideas" element={<Storyideas />} />
         <Route path="/Reels/:id" element={<ReelSingleIdea />} />
         <Route path="/Storyideas/:id" element={<Storysingleideas />} />
+        <Route path="/branding" element={<Branding />} />
       </Routes>
       {/* <Layout>
       </Layout> */}

@@ -13,7 +13,7 @@ module.exports = {
       "bg-grey": "#f9faf5",
       "lite-gray": "#828282",
       "deep-green": "#03654C",
-      "green-light": "#00FC51",
+      "green-light": "#009580",
       "deep-brownish": "#BF8943",
       "wheat-lite": "#E7E7E7",
       "sky-off": "#21293B",

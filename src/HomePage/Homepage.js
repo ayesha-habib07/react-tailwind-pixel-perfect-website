@@ -1,12 +1,12 @@
 import React from "react";
-import Search from "../../component/Search";
-import Searchcions from "../../asset/icons/search.svg";
-import Austin from "../images/Austin.png";
+import Search from "../component/Search";
+import Searchcions from "../asset/search icon/search.svg";
+import Austin from "../asset/images/Austin.png";
 import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import PostCard from "../../component/PostCard";
-import StoryCard from "../../component/StoryCard";
-import Sidebar from "../../component/Sidebar";
+import PostCard from "../component/PostCard";
+import StoryCard from "../component/StoryCard";
+import Sidebar from "../component/Sidebar";
 const Homepage = () => {
   return (
     // <>

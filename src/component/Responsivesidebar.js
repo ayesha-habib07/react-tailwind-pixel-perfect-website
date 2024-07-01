@@ -2,33 +2,26 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Borderbottom from "./Borderbottom";
 
-const Sidebar = () => {
+const Responsivesidebar = () => {
   return (
-    <div className="w-[261px] bg-green text-white rounded-[50%]  ">
+    <div className=" bg-green text-white rounded-[50%]  ">
       <aside
-        className="container mx-auto flex flex-col shrink-0 lg:w-[300px] w-[250px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 left-0 bg-green  fixed-start loopple-fixed-start scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-track-deep-green scrollbar-thumb-dark-green overflow-y-scroll  h-[100vh]"
+        className="container mx-auto flex flex-col shrink-0 w-[5%] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 left-0 bg-green  fixed-start loopple-fixed-start scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-track-deep-green scrollbar-thumb-dark-green overflow-y-scroll  h-[100vh]"
         id="sidenav-main"
       >
-        <div className="flex items-center justify-between mt-[30px] mb-4">
-          <div className="flex items-center mr-5 px-8 py-5">
-            <div className="inline-block relative shrink-0 cursor-pointer mr-2">
+        <div className="flex items-center justify-between mt-[30px] mx-4 mb-8">
+          <div className="inline-block relative shrink-0 cursor-pointer mr-2">
+            <Link to={"/"}>
               <img
                 className="w-[40px] shrink-0 inline-block "
                 src={require("../asset/logo/Frame.png")}
                 alt="logo"
               />
-            </div>
-            <div className="mr-2 ">
-              <Link
-                to={"/"}
-                className="dark:hover:text-primary hover:text-primary transition-colors duration-200 ease-in-out dark:text-neutral-400/90 text-secondary-inverse font-semibold
-text-[20px] leading-[22.68px]"
-              >
-                Kyndom
-              </Link>
-            </div>
+            </Link>
           </div>
-          <div className="bg-[#065038] rounded-tl-3xl rounded-bl-3xl w-[44px] h-[32px] flex justify-center items-center">
+        </div>
+        {/* <div className="relative">
+          <div className=" absolute bg-[#065038] rounded-tl-3xl rounded-bl-3xl w-[44px] h-[32px] flex justify-center items-center">
             <Link
               to={"/"}
               className="cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out "
@@ -40,7 +33,7 @@ text-[20px] leading-[22.68px]"
               />
             </Link>
           </div>
-        </div>
+        </div> */}
         <Borderbottom />
 
         <div className="relative flex flex-col  items-center font-medium w-full my-5 ">
@@ -80,9 +73,6 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Dashboard
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -161,9 +151,6 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Content Calendar
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -211,9 +198,6 @@ text-[20px] leading-[22.68px]"
                         strokeMiterlimit={10}
                       />
                     </svg>
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Content vault
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -246,9 +230,6 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Favorites
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -287,9 +268,6 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Used Content
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -329,10 +307,6 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Setting
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -398,10 +372,6 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Social Media
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -448,9 +418,6 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Reels Ideas
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -504,9 +471,6 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Story Ideas
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -555,10 +519,6 @@ text-[20px] leading-[22.68px]"
                         strokelinejoin="round"
                       />
                     </svg>
-
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Story Template
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -624,10 +584,6 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Printable
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -669,10 +625,6 @@ text-[20px] leading-[22.68px]"
                         strokelinejoin="round"
                       />
                     </svg>
-
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Email/Text Marketing{" "}
-                    </span>
                   </>
                 )}
               </NavLink>
@@ -712,27 +664,17 @@ text-[20px] leading-[22.68px]"
                         strokeLinejoin="round"
                       />
                     </svg>
-
-                    <span style={{ color: isActive ? "green" : "inherit" }}>
-                      Branding
-                    </span>
                   </>
                 )}
               </NavLink>
             </span>
 
-            <div className="mt-28 px-6">
-              <div className="flex item-center gap-2">
-                <div className="flex items-center justify-center border border-white rounded-full w-12 cursor-pointer">
-                  <img
-                    src={require("../asset/navIcons/Ellipse 3.png")}
-                    alt="user "
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <span>Hello,</span>
-                  <span className="cursor-pointer font-bold">John Dewol</span>
-                </div>
+            <div className="mt-16 mx-2 ">
+              <div className="flex items-center justify-center border border-white rounded-full w-10 cursor-pointer">
+                <img
+                  src={require("../asset/navIcons/Ellipse 3.png")}
+                  alt="user "
+                />
               </div>
             </div>
           </div>
@@ -742,4 +684,4 @@ text-[20px] leading-[22.68px]"
   );
 };
 
-export default Sidebar;
+export default Responsivesidebar;

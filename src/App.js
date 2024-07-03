@@ -11,6 +11,8 @@ import Storyideas from "./Storyideas/Storyideas";
 import ReelSingleIdea from "./ReelsIdeas/ReelSingleIdea/ReelSingleIdea";
 import Storysingleideas from "./Storyideas/Storysingleideas/Storysingleideas";
 import Branding from "./pages/branding/Branding";
+import Storytemplates from "./Storytemplates/Storytemplates";
+import Storysingletemplates from "./Storytemplates/Storytemplatesideas/Storysingletemplates";
 function App() {
   return (
     <Router>
@@ -26,6 +28,8 @@ function App() {
         <Route path="/Reels/:id" element={<ReelSingleIdea />} />
         <Route path="/Storyideas/:id" element={<Storysingleideas />} />
         <Route path="/branding" element={<Branding />} />
+        <Route path="/storytemplates" element={<Storytemplates />} />
+        <Route path="/storytemplates/:id" element={<Storysingletemplates />} />
       </Routes>
       {/* <Layout>
       </Layout> */}
